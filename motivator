@@ -1,0 +1,12 @@
+import random
+quotes=['Always be happy!','Never underestimate yourself!','Believe in God, he will always there for you!','Trust your inner voice and go with it!']
+q=[1,2,3]
+while(True):
+  problem=input("enter your problem: ")
+  if 'low' in problem:
+    print(quotes[random.choice(q)])
+  else:
+     print(random.choice(quotes))
+  exit=int(input("enter 0 to exit.Else! you can ask the question again "))
+  if exit==0:
+    break
