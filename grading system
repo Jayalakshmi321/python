@@ -1,0 +1,14 @@
+grades={'O':10,'S':9,'A':8,'B':7,'C':6,'D':5,'F':0}
+cse={1:['m1','chemistry','english','Fc','ED','English lab','chemistry lab','IT workshop']}
+name=input("enter your name:")
+branch=input("enter your branch:")
+sem=int(input("enter your semester number:"))
+if branch=='cse':
+  result=0
+  for i in range(8):
+    print("hey ",name," enter your ",cse[sem][i]," grade:")
+    grade=(input())
+    print("hey ",name," enter your ",cse[sem][i]," credits:")
+    credits=float(input())
+    result=result+credits*grades[grade]
+  print(name," your cgpa is: ",result/19)
